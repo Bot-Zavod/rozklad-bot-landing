@@ -12,20 +12,18 @@
   <title>Rozklad Bot</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="static/vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
   <!-- Plugin CSS -->
   <!-- <link rel="stylesheet" href="static/device-mockups/device-mockups.min.css"> -->
 
   <!-- Custom styles for this template -->
-  <link href="static/css/new-age.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/new-age.css') }}" rel="stylesheet">
 
 </head>
 
@@ -57,25 +55,23 @@
 
 
 
-  <header class="masthead pt-5">
-    <div class="container h-100">
+  <header class="masthead pt-5"> <!-- no container -->
+    <div class="container h-100"> <!-- container -->
       <div class="row h-100">
 
         <div class="col-lg-6 my-auto p-sm-5 p-lg-0">
           <div class="header-content text-center mx-auto my-auto">
-            <div class="mb-5"><img src="static/img/logo-nobg.png" class="img-fluid rounded" alt="Rozklad Bot"></div>
+            <div class="mb-5"><img src="{{ url_for('static', filename='img/logo-nobg.png') }}" class="img-fluid rounded" alt="Rozklad Bot"></div>
             <!-- <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
           </div>
           <p class="text-center" style="font-size:1.4em;"><i class="fas fa-users"></i> 8000 студентів та викладачів</p>
         </div>
 
         <div class="mx-auto text-center d-block d-lg-none">
-          <a href="https://t.me/rozklad_bot" class="btn btn-outline btn-lg m-3 js-scroll-trigger">Перейти до бота  <i class="fab fa-telegram-plane"></i></a>
-          <a href="https://t.me/zavod_support" class="btn btn-outline btn-lg m-3 js-scroll-trigger">Зв'язатися з нами <i class="fas fa-share"></i></a>
+          <a href="https://t.me/rozklad_bot" class="btn btn-outline btn-lg m-3">Перейти до бота  <i class="fab fa-telegram-plane"></i></a>
         </div>
 
         <div class="col-lg-6 my-auto">
-          <p class="my-md-auto my-5 col-lg img-unis-text text-center">Ми вже працюємо з:</p>
 
           <!-- <div class="row text-center">
             <div class="col my-3">
@@ -115,18 +111,18 @@
           <div id="myCarousel" class="carousel slide w-100 mt-5" data-ride="carousel">
             <div class="carousel-inner w-100 text-center" role="listbox">
               <div class="carousel-item active">
-                <div class="col-6">
-                  <img class="img-fluid img-unis" src="static/img/logo_onmu.jpg">
+                <div class="col-6 col-lg-4">
+                  <img class="img-fluid img-unis" src="{{ url_for('static', filename='img/logo_onmu.jpg') }}">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="col-6">
-                  <img class="img-fluid img-unis" src="static/img/logo_oneu.png">
+                <div class="col-6 col-lg-4">
+                  <img class="img-fluid img-unis" src="{{ url_for('static', filename='img/logo_oneu.png') }}">
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="col-6">
-                  <img class="img-fluid img-unis" src="static/img/logo_onmu.jpg">
+                <div class="col-6 col-lg-4">
+                  <img class="img-fluid img-unis" src="{{ url_for('static', filename='img/logo_onmu.jpg') }}">
                 </div>
               </div>
             </div>
@@ -143,13 +139,12 @@
           
 
           <div class="header-content mx-auto mt-5">
-            <h1 class="mb-5 mt-3">Rozklad bot це круто. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h1>
+            <h1 class="mb-5 mt-3">Rozklad bot - це чат-бот, який допоможе вам дізнатися розклад вашого вузу і підкаже на яку пару зараз пора бігти :)</h1>
           </div>
         </div>
 
         <div class="mx-auto text-center d-none d-lg-block">
-          <a href="https://t.me/rozklad_bot" class="btn btn-outline btn-lg m-3 js-scroll-trigger">Перейти до бота  <i class="fab fa-telegram-plane"></i></a>
-          <a href="https://t.me/zavod_support" class="btn btn-outline btn-lg m-3 js-scroll-trigger">Зв'язатися з нами <i class="fas fa-share"></i></a>
+          <a href="https://t.me/rozklad_bot" class="btn btn-outline btn-lg m-3">Перейти до бота  <i class="fab fa-telegram-plane"></i></a>
         </div>
 
       </div>
@@ -243,36 +238,33 @@
       </div>
     </div>
     <div class="overlay"></div>
-  </section>
+  </section> -->
 
-  <section class="contact bg-primary" id="contact">
-    <div class="container">
-      <h2>We
-        <i class="fas fa-heart"></i>
-        new friends!</h2>
+  <section class="contact" id="contact">
+    <div class="container mb-4">
       <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
         <li class="list-inline-item social-facebook">
-          <a href="#">
+          <a href="https://www.facebook.com/rozkladbot">
             <i class="fab fa-facebook-f"></i>
           </a>
         </li>
+        <li class="list-inline-item social-twitter">
+          <a href="https://twitter.com/rozklad_bot">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
         <li class="list-inline-item social-google-plus">
-          <a href="#">
-            <i class="fab fa-google-plus-g"></i>
+          <a href="https://www.instagram.com/rozklad_bot/">
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
       </ul>
     </div>
+    <a href="https://t.me/zavod_support" style="color: white">&commat; zavod_support - зв'язатися з нами</a>
   </section>
 
-  <footer>
+  <!-- <footer>
     <div class="container">
-      <p>&copy; Your Website 2020. All Rights Reserved.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Privacy</a>
@@ -284,19 +276,20 @@
           <a href="#">FAQ</a>
         </li>
       </ul>
+      <p>&copy; Your Website 2020. All Rights Reserved.</p> 
     </div>
   </footer> -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="static/js/new-age.js"></script>
-  <script src="static/js/carousel.js"></script>
+  <script src="{{ url_for('static', filename='js/new-age.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
 
 </body>
 
