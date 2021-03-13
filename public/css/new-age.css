@@ -162,7 +162,7 @@ header.masthead {
   /*background-color: #24ACE3;*/
   background-image: url("../img/gradcap.png"), url("../img/school.png"), url("../img/books.png"), url("../img/alarm.png"), url("../img/ledger.png"), url("../img/student.png"), url("../img/light-bulb.png"), url("../img/globe.png");
   background-repeat: no-repeat;
-  background-size: 2.8em, 4em, 3em, 2.3em, 3em, 3em, 2.4em, 1.6em;
+  background-size: 2.8em, 4em, 7em, 4.5em, 3em, 3em, 5em, 2.6em;
   background-position: 95% 20%, 40% 5%, 15% 85%, 5% 20%, 80% 95%, 10% 45%, 90% 75%, 35% 70%;
 }
 
@@ -209,126 +209,6 @@ header.masthead .device-container .screen img {
   header.masthead .device-container {
     max-width: 325px;
   }
-}
-
-section.download {
-  position: relative;
-  padding: 150px 0;
-}
-
-section.download h2 {
-  font-size: 50px;
-  margin-top: 0;
-}
-
-section.download .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
-}
-
-section.download .badges .badge-link:last-child {
-  margin-bottom: 0;
-}
-
-section.download .badges .badge-link img {
-  height: 60px;
-}
-
-@media (min-width: 768px) {
-  section.download .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-}
-
-section.features .section-heading {
-  margin-bottom: 100px;
-}
-
-section.features .section-heading h2 {
-  margin-top: 0;
-}
-
-section.features .section-heading p {
-  margin-bottom: 0;
-}
-
-section.features .device-container,
-section.features .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
-}
-
-section.features .device-container {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  section.features .device-container {
-    margin-bottom: 0;
-  }
-}
-
-section.features .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-section.features .feature-item h3 {
-  font-size: 30px;
-}
-
-section.features .feature-item i {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section.cta {
-  position: relative;
-  padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-section.cta .cta-content h2 {
-  font-size: 50px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
-  }
-}
-
-section.cta .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.contact {
